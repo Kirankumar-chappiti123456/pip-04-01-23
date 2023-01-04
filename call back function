@@ -1,0 +1,24 @@
+#include<stdio.h>
+int add(int a,int b)
+{
+    int c=a+b;
+    printf("add function:%d\n",c);
+    return c; // we did not return c and call back function will not get the correct value.it is must .
+}
+int callback(int (*ptr)(int ,int))
+{
+    int a=10,b=23;
+    printf("the call back function:%d",ptr(a,b));
+}
+int main()
+{
+    int (*fptr)(int ,int)=add;
+    callback(fptr);
+}
+
+
+
+call back function:
+1)the refference of function is passed to another function as an argument to call .it is called as call back function.
+why we use call back function:
+1)A callback function is passed to another function as an argument that allows a lower-level software layer to call a function to higher-level layer.
