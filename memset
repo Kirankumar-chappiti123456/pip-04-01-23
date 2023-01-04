@@ -16,3 +16,24 @@ syntax:
 void memset(void *p,int n,int size of l);
 
 
+
+my own memset function:
+#include <stdio.h>
+#include<string.h>
+int memsetfun(char *str,int ch,int l)
+{
+    char *s=str;
+    for(int i=0;i<l;i++)
+    {
+        s[i]=ch;
+    }
+}
+int main()
+{
+char s[]={"kiran kumar in hyderbad"};
+int l=strlen(s);
+printf("length of the string:%d\n",l);
+memsetfun(s+4,'0',7);
+printf("the memset char:%s\n",s);
+
+}
