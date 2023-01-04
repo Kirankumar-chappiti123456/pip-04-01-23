@@ -1,0 +1,24 @@
+#include <stdio.h>
+int swap(int *x,int *y)
+{
+    int temp=*x;
+    *x=*y;     // called function.
+    *y=temp;
+    printf("swap function:%d %d\n",*x,*y);
+}
+int main()
+{
+   int a=10;
+   int b=20;
+   printf("before swap:%d %d\n",a,b);// calling function. 
+   swap(&a,&b); // called function.
+   printf("after swap:%d %d\n",a,b);
+   
+}
+
+
+call by refference:
+1)once the stack frame is destroyed the value can by the main function.
+2)because the value change in main function with the help of address and pointers.
+3)and we change the value in the called function also.
+4)it copies the into the main function with the help of the pointer and address.
