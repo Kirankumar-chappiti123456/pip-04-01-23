@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+   char s[]="kiran kumar";
+   char f[]="kiran kumar chappiti";
+   char k=memcmp(s,f,sizeof(s));
+ 
+    if(k>0)
+    {
+        printf("str1 is greater than str2");
+    }
+    else if(k<0)
+    {
+        printf("str1 is lesser than str2");
+    }
+    else
+    {
+        printf("str1 is  equal to str2");
+    }
+}
+
+using own compare function :
+
+#include <stdio.h>
+#include<string.h>
+void mymemcmp(char *str1,char *str2,int l)
+{
+    char *s=str1;
+    char *f=str2;
+     if(s>f)
+    {
+        printf("str1 is greater than str2");
+    }
+    else if(s<f)
+    {
+        printf("str1 is lesser than str2");
+    }
+    else
+    {
+        printf("str1 is  equal to str2");
+    }
+    
+}
+int main()
+{
+   char s[]="kiran kumar";
+   char f[]="kiran kumar chappiti";
+   int l=strlen(s);
+   mymemcmp(s,f,l);
+}
+memcmp:
+1)
