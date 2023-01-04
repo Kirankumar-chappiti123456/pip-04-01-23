@@ -1,0 +1,22 @@
+#include <stdio.h>
+int swap(int x,int y)
+{
+    int temp=x;
+    x=y;     // calling function.
+    y=temp;
+    printf("swap function:%d %d\n",x,y);
+}
+int main()
+{
+   int a=10;
+   int b=20;
+   printf("before swap:%d %d\n",a,b);// calling function. 
+   swap(a,b); // called function.
+   printf("after swap:%d %d\n",a,b);
+   
+}
+
+call by value:
+1)the call by value the change are made in the fuction (called).
+2)and if we want to change the value in the calling it can not change only main function it can be change the value.
+3)after the calling function completes the execution in the calling function will destroyed in the stack that is the we did not get the value in the calling function.
