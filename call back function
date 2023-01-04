@@ -20,5 +20,6 @@ int main()
 
 call back function:
 1)the refference of function is passed to another function as an argument to call .it is called as call back function.
+2) and we have to use function pointer to call the call back function.
 why we use call back function:
 1)A callback function is passed to another function as an argument that allows a lower-level software layer to call a function to higher-level layer.
