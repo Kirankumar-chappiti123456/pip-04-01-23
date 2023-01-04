@@ -49,5 +49,4 @@ int main()
    int l=strlen(s);
    mymemcmp(s,f,l);
 }
-memcmp:
-1)
+
