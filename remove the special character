@@ -1,8 +1,6 @@
 #include<stdio.h>
-int main()
+char rmspec(char s[])
 {
-    char s[]="kiran22344kumar@21345";
-    printf("before removing the special characters:%s\n",s);
     int j=0,i=0;
     for(i=0;s[i]!='\0';i++)
     {
@@ -17,4 +15,11 @@ int main()
         
     }
     printf("after removed the special characters:%s",s);
+}
+int main()
+{
+    char s[]="kiran22344kumar@21345";
+    printf("before removing the special characters:%s\n",s);
+    char (*fptr)(char [])=rmspec;
+    fptr(s);
 }
