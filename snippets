@@ -21,3 +21,28 @@ int main()
 }
 
 
+
+#include<stdio.h>
+int main()
+{
+    int a,b=10;
+    a = b---; // error
+    printf("a=%d\n",a); // first it is updated because it is a post increament .first it is not change the value but after the value change. 
+    printf("b=%d\n",b);
+}
+
+
+#include <stdio.h>
+  
+int extern i;
+                    // we use  any where in the function the extern keyword will take the value any where. 
+int main()
+{
+    printf("%d", i);
+}
+  
+int i = 10;
+
+
+
+
