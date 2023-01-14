@@ -37,3 +37,29 @@ memsetfun(s+4,'0',7);
 printf("the memset char:%s\n",s);
 
 }
+
+
+
+
+another:
+#include<stdio.h>
+#include<string.h>
+int memsets(char *str1,char ch,int l)
+{
+    int k;
+    scanf("%d",&k);
+    char *s=str1+k;
+    int i=0;
+    for(i=0;i<l;i++)
+    {
+        s[i]=ch;
+    }
+}
+int main()
+{
+    char s[]="kirankumar";
+    int l=strlen(s);
+    char ch='a';
+    memsets(s,ch,3);
+    printf("%s",s);
+}
